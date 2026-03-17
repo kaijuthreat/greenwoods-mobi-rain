@@ -8,7 +8,7 @@
 }
 
 :root {
-  --background: oklch(0.16 0.02 150);
+  --background: oklch(0.18 0.025 120);
   --foreground: oklch(0.95 0.01 90);
 
   --card: oklch(0.22 0.025 145);
@@ -93,13 +93,46 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .diagonal-stripes {
-  background-image: repeating-linear-gradient(
-    45deg,
-    transparent,
-    transparent 10px,
-    oklch(0.75 0.18 145 / 0.06) 10px,
-    oklch(0.75 0.18 145 / 0.06) 20px
-  );
+  background: 
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 10px,
+      oklch(0.75 0.18 145 / 0.06) 10px,
+      oklch(0.75 0.18 145 / 0.06) 20px
+    ),
+    repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 15px,
+      oklch(0.72 0.08 75 / 0.04) 15px,
+      oklch(0.72 0.08 75 / 0.04) 30px
+    );
+}
+
+.tan-accent-bg {
+  background: 
+    radial-gradient(ellipse 80% 50% at 20% 50%, oklch(0.72 0.08 75 / 0.08), transparent),
+    radial-gradient(ellipse 60% 50% at 80% 50%, oklch(0.75 0.18 145 / 0.05), transparent),
+    var(--background);
+}
+
+.mixed-texture {
+  background: 
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 40px,
+      oklch(0.72 0.08 75 / 0.03) 40px,
+      oklch(0.72 0.08 75 / 0.03) 42px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 40px,
+      oklch(0.75 0.18 145 / 0.02) 40px,
+      oklch(0.75 0.18 145 / 0.02) 42px
+    );
 }
 
 .glow-green {

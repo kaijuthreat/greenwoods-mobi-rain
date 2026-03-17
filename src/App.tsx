@@ -42,7 +42,7 @@ function App() {
   ]
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen tan-accent-bg text-foreground">
       <div className="fixed top-0 left-0 right-0 h-1 bg-gradient-to-r from-red via-primary to-tan z-50" />
       
       <header className="sticky top-1 z-40 border-b border-border bg-background/95 backdrop-blur">
@@ -128,7 +128,7 @@ function App() {
           </div>
         </section>
 
-        <section className="py-16 md:py-24 bg-card/50">
+        <section className="py-16 md:py-24 bg-card/50 mixed-texture">
           <div className="container mx-auto px-4">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -169,7 +169,7 @@ function App() {
           </div>
         </section>
 
-        <section className="py-16 md:py-24">
+        <section className="py-16 md:py-24 tan-accent-bg">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <motion.div
