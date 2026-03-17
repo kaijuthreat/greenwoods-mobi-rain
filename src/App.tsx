@@ -249,6 +249,11 @@ function App() {
                   <Phone weight="fill" className="mr-3" size={28} />
                   TELL US WHAT YOUR CAR'S PROBLEM IS
                 </Button>
+              </div>
+            </motion.div>
+          </div>
+        </section>
+      </main>
 
       <footer className="border-t border-border py-12">
         <div className="container mx-auto px-4">
