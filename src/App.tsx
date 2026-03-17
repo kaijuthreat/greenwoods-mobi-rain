@@ -249,15 +249,6 @@ function App() {
                   <Phone weight="fill" className="mr-3" size={28} />
                   TELL US WHAT YOUR CAR'S PROBLEM IS
                 </Button>
-              </div>
-
-              <p className="mt-6 text-sm text-muted-foreground font-body">
-                Available 24 hours a day, 7 days a week
-              </p>
-            </motion.div>
-          </div>
-        </section>
-      </main>
 
       <footer className="border-t border-border py-12">
         <div className="container mx-auto px-4">
