@@ -109,15 +109,6 @@ function App() {
                   <Phone weight="fill" className="mr-3" size={28} />
                   {phoneNumber}
                 </Button>
-                <Button 
-                  size="lg"
-                  variant="outline"
-                  className="text-xl px-6 py-6 bg-red/90 text-red-foreground hover:bg-red border-red font-heading font-bold tracking-wide glow-red"
-                  onClick={() => window.location.href = `tel:${phoneNumber}`}
-                >
-                  <Lightning weight="fill" className="mr-2" size={24} />
-                  EMERGENCY
-                </Button>
               </div>
 
               <p className="mt-6 text-sm text-muted-foreground font-body">
@@ -257,15 +248,6 @@ function App() {
                 >
                   <Phone weight="fill" className="mr-3" size={28} />
                   TELL US WHAT YOUR CAR'S PROBLEM IS
-                </Button>
-                <Button 
-                  size="lg"
-                  variant="outline"
-                  className="text-xl px-6 py-6 bg-red/90 text-red-foreground hover:bg-red border-red font-heading font-bold tracking-wide glow-red"
-                  onClick={() => window.location.href = `tel:${phoneNumber}`}
-                >
-                  <Lightning weight="fill" className="mr-2" size={24} />
-                  EMERGENCY
                 </Button>
               </div>
 
