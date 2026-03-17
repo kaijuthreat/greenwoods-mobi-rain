@@ -60,18 +60,20 @@ The design should evoke speed, reliability, and automotive expertise—think rac
 
 ## Color Selection
 
-The palette draws directly from the Greenwood's business card imagery—vibrant racing greens, deep blacks, and bold accent colors that convey speed and professionalism.
+The palette draws directly from the Greenwood's business card imagery—vibrant racing greens, deep blacks, tan/beige tones, and bold red accents that convey speed, reliability, and professionalism.
 
-- **Primary Color**: Electric Lime Green (oklch(0.85 0.20 130)) - Energetic, high-visibility color that communicates speed and 24/7 availability, perfect for CTAs and headers
+- **Primary Color**: Electric Lime Green (oklch(0.75 0.18 145)) - Energetic, high-visibility color that communicates speed and 24/7 availability, perfect for CTAs and headers
 - **Secondary Colors**: 
-  - Deep Black (oklch(0.15 0 0)) - Professional foundation, creates high contrast and sophistication
-  - Metallic Silver/Gray (oklch(0.65 0.01 270)) - Automotive sophistication, used for borders and subtle accents
-- **Accent Color**: Racing Red (oklch(0.55 0.22 25)) - Emergency urgency, used sparingly for critical CTAs and important alerts
+  - Deep Black (oklch(0.16 0.02 150)) - Professional foundation, creates high contrast and sophistication
+  - Metallic Silver/Gray (oklch(0.68 0.10 90)) - Automotive sophistication, used for borders and subtle accents
+  - Warm Tan/Beige (oklch(0.72 0.08 75)) - Organic warmth from the logo, used for highlights and secondary badges
+- **Accent Color**: Racing Red (oklch(0.55 0.22 25)) - Emergency urgency and attention-grabbing, used for critical CTAs and emergency service indicators
 - **Foreground/Background Pairings**: 
-  - Primary Background (Deep Black oklch(0.15 0 0)): Lime Green text (oklch(0.85 0.20 130)) - Ratio 10.2:1 ✓
-  - Lime Green Buttons (oklch(0.85 0.20 130)): Black text (oklch(0.15 0 0)) - Ratio 10.2:1 ✓
-  - Card Backgrounds (oklch(0.20 0.01 0)): White/Light text (oklch(0.95 0 0)) - Ratio 12.8:1 ✓
+  - Primary Background (Deep Black oklch(0.16 0.02 150)): Lime Green text (oklch(0.75 0.18 145)) - Ratio 9.5:1 ✓
+  - Lime Green Buttons (oklch(0.75 0.18 145)): Black text (oklch(0.15 0.02 150)) - Ratio 9.5:1 ✓
+  - Card Backgrounds (oklch(0.22 0.025 145)): White/Light text (oklch(0.95 0.01 90)) - Ratio 12.1:1 ✓
   - Accent Red (oklch(0.55 0.22 25)): White text (oklch(0.98 0 0)) - Ratio 4.9:1 ✓
+  - Tan/Beige (oklch(0.72 0.08 75)): Dark text (oklch(0.20 0.02 150)) - Ratio 8.7:1 ✓
 
 ## Font Selection
 

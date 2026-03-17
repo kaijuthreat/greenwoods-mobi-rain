@@ -43,7 +43,7 @@ function App() {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <div className="fixed top-0 left-0 right-0 h-1 bg-primary z-50" />
+      <div className="fixed top-0 left-0 right-0 h-1 bg-gradient-to-r from-red via-primary to-tan z-50" />
       
       <header className="sticky top-1 z-40 border-b border-border bg-background/95 backdrop-blur">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
@@ -80,11 +80,11 @@ function App() {
               className="max-w-4xl mx-auto text-center"
             >
               <div className="flex items-center justify-center gap-3 mb-6">
-                <Badge className="bg-accent text-accent-foreground text-sm px-4 py-1 font-heading">
+                <Badge className="bg-red text-red-foreground text-sm px-4 py-1 font-heading">
                   <Lightning weight="fill" className="mr-1" size={16} />
                   EMERGENCY SERVICE
                 </Badge>
-                <Badge className="bg-primary text-primary-foreground text-sm px-4 py-1 font-heading">
+                <Badge className="bg-tan text-tan-foreground text-sm px-4 py-1 font-heading">
                   <Clock weight="fill" className="mr-1" size={16} />
                   24/7 AVAILABLE
                 </Badge>
@@ -108,6 +108,15 @@ function App() {
                 >
                   <Phone weight="fill" className="mr-3" size={28} />
                   {phoneNumber}
+                </Button>
+                <Button 
+                  size="lg"
+                  variant="outline"
+                  className="text-xl px-6 py-6 bg-red/90 text-red-foreground hover:bg-red border-red font-heading font-bold tracking-wide glow-red"
+                  onClick={() => window.location.href = `tel:${phoneNumber}`}
+                >
+                  <Lightning weight="fill" className="mr-2" size={24} />
+                  EMERGENCY
                 </Button>
               </div>
 
@@ -143,7 +152,7 @@ function App() {
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                 >
-                  <Card className="group hover:border-primary transition-all duration-300 hover:shadow-lg hover:shadow-primary/20 h-full">
+                  <Card className="group hover:border-primary transition-all duration-300 hover:shadow-lg hover:shadow-primary/20 h-full border-l-4 border-l-tan">
                     <CardHeader>
                       <div className="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
                         <service.icon className="text-primary" weight="duotone" size={32} />
@@ -181,8 +190,8 @@ function App() {
                   transition={{ duration: 0.5, delay: 0.1 }}
                   className="text-center"
                 >
-                  <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Clock weight="fill" className="text-primary-foreground" size={32} />
+                  <div className="w-16 h-16 bg-tan rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Clock weight="fill" className="text-tan-foreground" size={32} />
                   </div>
                   <h4 className="text-xl font-heading mb-2">24/7 AVAILABILITY</h4>
                   <p className="text-muted-foreground font-body">
@@ -213,8 +222,8 @@ function App() {
                   transition={{ duration: 0.5, delay: 0.3 }}
                   className="text-center"
                 >
-                  <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                    <MapPin weight="fill" className="text-primary-foreground" size={32} />
+                  <div className="w-16 h-16 bg-red rounded-full flex items-center justify-center mx-auto mb-4">
+                    <MapPin weight="fill" className="text-red-foreground" size={32} />
                   </div>
                   <h4 className="text-xl font-heading mb-2">WE COME TO YOU</h4>
                   <p className="text-muted-foreground font-body">
@@ -226,7 +235,7 @@ function App() {
           </div>
         </section>
 
-        <section className="py-16 md:py-24 bg-card diagonal-stripes">
+        <section className="py-16 md:py-24 bg-card diagonal-stripes border-t-4 border-t-tan">
           <div className="container mx-auto px-4">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -240,14 +249,25 @@ function App() {
                 Don't let car trouble slow you down. Call now for fast, professional mobile mechanic service.
               </p>
 
-              <Button 
-                size="lg"
-                className="text-2xl px-8 py-7 bg-primary text-primary-foreground hover:bg-primary/90 font-heading font-bold tracking-widest glow-green"
-                onClick={() => window.location.href = `tel:${phoneNumber}`}
-              >
-                <Phone weight="fill" className="mr-3" size={28} />
-                {phoneNumber}
-              </Button>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <Button 
+                  size="lg"
+                  className="text-2xl px-8 py-7 bg-primary text-primary-foreground hover:bg-primary/90 font-heading font-bold tracking-widest glow-green"
+                  onClick={() => window.location.href = `tel:${phoneNumber}`}
+                >
+                  <Phone weight="fill" className="mr-3" size={28} />
+                  {phoneNumber}
+                </Button>
+                <Button 
+                  size="lg"
+                  variant="outline"
+                  className="text-xl px-6 py-6 bg-red/90 text-red-foreground hover:bg-red border-red font-heading font-bold tracking-wide glow-red"
+                  onClick={() => window.location.href = `tel:${phoneNumber}`}
+                >
+                  <Lightning weight="fill" className="mr-2" size={24} />
+                  EMERGENCY
+                </Button>
+              </div>
 
               <p className="mt-6 text-sm text-muted-foreground font-body">
                 Available 24 hours a day, 7 days a week
