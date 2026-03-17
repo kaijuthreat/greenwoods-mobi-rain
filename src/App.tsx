@@ -256,7 +256,7 @@ function App() {
                   onClick={() => window.location.href = `tel:${phoneNumber}`}
                 >
                   <Phone weight="fill" className="mr-3" size={28} />
-                  {phoneNumber}
+                  TELL US WHAT YOUR CAR'S PROBLEM IS
                 </Button>
                 <Button 
                   size="lg"
