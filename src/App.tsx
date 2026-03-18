@@ -6,7 +6,7 @@ import { Separator } from "@/components/ui/separator"
 import { motion } from "framer-motion"
 
 function App() {
-  const phoneNumber = "404-690-3256"
+  const phoneNumber = "(706) 302-0163"
 
   const services = [
     {
