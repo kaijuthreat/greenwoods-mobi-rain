@@ -1,4 +1,4 @@
-import { Phone, Wrench, Clock, MapPin, Engine, Tire, BatteryCharging, Gauge, CarProfile, Lightning } from "@phosphor-icons/react"
+import { Phone, Wrench, Clock, MapPin, Engine, Tire, Truck, Gauge, CarProfile, Lightning } from "@phosphor-icons/react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -15,9 +15,9 @@ function App() {
       description: "Complete engine analysis and repair services at your location"
     },
     {
-      icon: BatteryCharging,
-      title: "Battery Service",
-      description: "Jump starts, battery testing, and replacement services"
+      icon: Truck,
+      title: "Towing & Recovery",
+      description: "Fast and reliable towing and vehicle recovery services"
     },
     {
       icon: Tire,
