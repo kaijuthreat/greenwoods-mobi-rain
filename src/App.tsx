@@ -48,11 +48,9 @@ function App() {
       <header className="sticky top-1 z-40 border-b border-border bg-background/95 backdrop-blur">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <img
-              src="/greenwoodlogo.png"
-              alt="Greenwood's Logo"
-              className="w-10 h-10 object-contain"
-            />
+            <div className="w-10 h-10 bg-primary rounded-sm flex items-center justify-center">
+              <Wrench weight="bold" className="text-primary-foreground" size={24} />
+            </div>
             <div>
               <h1 className="text-xl font-bold tracking-tight">GREENWOOD'S</h1>
               <p className="text-xs text-muted-foreground font-body">Mobile Mechanic</p>
@@ -253,6 +251,7 @@ function App() {
                     size="lg"
                     className="w-full sm:w-auto text-base md:text-xl px-5 md:px-8 py-3 md:py-6 bg-primary text-primary-foreground hover:bg-primary/90 font-heading font-bold tracking-widest glow-green"
                   >
+                    <Wrench weight="fill" className="mr-3" size={28} />
                     TELL US WHAT YOUR CAR'S PROBLEM IS
                   </Button>
                 </a>
@@ -266,11 +265,9 @@ function App() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <div className="flex items-center justify-center gap-3 mb-6">
-              <img
-                src="/greenwoodlogo.png"
-                alt="Greenwood's Logo"
-                className="w-12 h-12 object-contain"
-              />
+              <div className="w-12 h-12 bg-primary rounded-sm flex items-center justify-center">
+                <Wrench weight="bold" className="text-primary-foreground" size={28} />
+              </div>
               <div className="text-left">
                 <h2 className="text-2xl font-bold">GREENWOOD'S</h2>
                 <p className="text-sm text-muted-foreground font-body">24 Hour Mobile Mechanic</p>
