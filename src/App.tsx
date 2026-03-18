@@ -113,7 +113,7 @@ function App() {
 
               <p className="mt-6 text-sm text-muted-foreground font-body">
                 <MapPin weight="fill" className="inline mr-1" size={16} />
-                Serving the Greater Metro Area
+                Serving the Coweta County Area
               </p>
             </motion.div>
           </div>
@@ -292,7 +292,7 @@ function App() {
                   Professional mobile mechanic services available 24/7
                 </p>
                 <p className="text-sm text-muted-foreground font-body">
-                  Serving the Greater Metro Area
+                  Serving the Coweta County Area
                 </p>
               </div>
             </div>
