@@ -245,10 +245,11 @@ function App() {
                   href="https://docs.google.com/forms/d/e/1FAIpQLSfbz658-jNCCwfeg-Cx53tmGQZa4NgeRNkJ7K2Dg4sRta8XGA/viewform?usp=dialog"
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="w-full sm:w-auto"
                 >
                   <Button 
                     size="lg"
-                    className="text-2xl px-8 py-7 bg-primary text-primary-foreground hover:bg-primary/90 font-heading font-bold tracking-widest glow-green"
+                    className="w-full sm:w-auto text-base md:text-xl px-5 md:px-8 py-3 md:py-6 bg-primary text-primary-foreground hover:bg-primary/90 font-heading font-bold tracking-widest glow-green"
                   >
                     TELL US WHAT YOUR CAR'S PROBLEM IS
                   </Button>
