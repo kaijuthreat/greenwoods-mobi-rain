@@ -7,6 +7,7 @@ import { motion } from "framer-motion"
 
 function App() {
   const phoneNumber = "(706) 302-0163"
+  const phoneNumber2 = "(404) 690-5256"
 
   const services = [
     {
@@ -100,7 +101,7 @@ function App() {
                 Day or night, we're here to keep you moving.
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <div className="flex flex-col items-center gap-4">
                 <div className="flex flex-col items-center gap-1">
                   <p className="text-sm text-muted-foreground font-body">Chris Greenwood</p>
                   <Button 
@@ -112,7 +113,19 @@ function App() {
                     {phoneNumber}
                   </Button>
                 </div>
+                <div className="flex flex-col items-center gap-1">
+                  <p className="text-sm text-muted-foreground font-body">Erin Greenwood</p>
+                  <Button 
+                    size="lg"
+                    className="text-2xl px-8 py-7 bg-primary text-primary-foreground hover:bg-primary/90 font-heading font-bold tracking-widest glow-green"
+                    onClick={() => window.location.href = `tel:${phoneNumber2}`}
+                  >
+                    <Phone weight="fill" className="mr-3" size={28} />
+                    {phoneNumber2}
+                  </Button>
+                </div>
               </div>
+
               <p className="mt-6 text-sm text-muted-foreground font-body">
                 <MapPin weight="fill" className="inline mr-1" size={16} />
                 Serving the Coweta County Area
@@ -289,6 +302,15 @@ function App() {
                 >
                   <Phone weight="fill" className="mr-2" size={20} />
                   {phoneNumber}
+                </Button>
+                <p className="text-sm text-muted-foreground font-body mb-1 mt-2">Erin Greenwood</p>
+                <Button 
+                  variant="link" 
+                  className="text-primary text-xl font-heading tracking-wide"
+                  onClick={() => window.location.href = `tel:${phoneNumber2}`}
+                >
+                  <Phone weight="fill" className="mr-2" size={20} />
+                  {phoneNumber2}
                 </Button>
               </div>
 
