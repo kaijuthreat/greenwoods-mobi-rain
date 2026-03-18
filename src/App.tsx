@@ -101,16 +101,19 @@ function App() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <Button 
-                  size="lg"
-                  className="text-2xl px-8 py-7 bg-primary text-primary-foreground hover:bg-primary/90 font-heading font-bold tracking-widest glow-green"
-                  onClick={() => window.location.href = `tel:${phoneNumber}`}
-                >
-                  <Phone weight="fill" className="mr-3" size={28} />
-                  {phoneNumber}
-                </Button>
+                <div className="flex flex-col items-center gap-1">
+                  <p className="text-sm text-muted-foreground font-body">Chris Greenwood</p>
+                  <Button 
+                    size="lg"
+                    className="text-2xl px-8 py-7 bg-primary text-primary-foreground hover:bg-primary/90 font-heading font-bold tracking-widest glow-green"
+                    onClick={() => window.location.href = `tel:${phoneNumber}`}
+                  >
+                    <Phone weight="fill" className="mr-3" size={28} />
+                    {phoneNumber}
+                  </Button>
+                </div>
+                <p className="text-sm text-muted-foreground font-body">Chris Greenwood</p>
               </div>
-
               <p className="mt-6 text-sm text-muted-foreground font-body">
                 <MapPin weight="fill" className="inline mr-1" size={16} />
                 Serving the Coweta County Area
@@ -279,6 +282,7 @@ function App() {
             <div className="space-y-4">
               <div>
                 <p className="text-lg font-heading mb-2">CONTACT</p>
+                <p className="text-sm text-muted-foreground font-body mb-1">Chris Greenwood</p>
                 <Button 
                   variant="link" 
                   className="text-primary text-xl font-heading tracking-wide"
