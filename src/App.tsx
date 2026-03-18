@@ -112,7 +112,6 @@ function App() {
                     {phoneNumber}
                   </Button>
                 </div>
-                <p className="text-sm text-muted-foreground font-body">Chris Greenwood</p>
               </div>
               <p className="mt-6 text-sm text-muted-foreground font-body">
                 <MapPin weight="fill" className="inline mr-1" size={16} />
