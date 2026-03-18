@@ -241,14 +241,18 @@ function App() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <Button 
-                  size="lg"
-                  className="text-2xl px-8 py-7 bg-primary text-primary-foreground hover:bg-primary/90 font-heading font-bold tracking-widest glow-green"
-                  onClick={() => window.location.href = `tel:${phoneNumber}`}
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSfbz658-jNCCwfeg-Cx53tmGQZa4NgeRNkJ7K2Dg4sRta8XGA/viewform?usp=dialog"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  <Phone weight="fill" className="mr-3" size={28} />
-                  TELL US WHAT YOUR CAR'S PROBLEM IS
-                </Button>
+                  <Button 
+                    size="lg"
+                    className="text-2xl px-8 py-7 bg-primary text-primary-foreground hover:bg-primary/90 font-heading font-bold tracking-widest glow-green"
+                  >
+                    TELL US WHAT YOUR CAR'S PROBLEM IS
+                  </Button>
+                </a>
               </div>
             </motion.div>
           </div>
